@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Eats - Home</title>
+
   <style>
-    /* Basic styling for the home page */
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fffef9;
-      color: #333;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
     header {
-      background-color: #ff5722;
-      color: white;
+      background: rgba(0, 0, 0, 0.7);
       padding: 1.5rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
     nav a {
-      color: white;
+      color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: orange;
+    }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      height: 80vh;
-      color: white;
+      flex: 1;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      padding: 2rem;
       text-align: center;
     }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
+
+    .hero-content {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      padding: 50px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
       max-width: 600px;
+      width: 90%;
     }
-    .hero a {
-      background-color: #ff9800;
+
+    .hero-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #f0f0f0;
+    }
+
+    .btn {
       padding: 0.8rem 2rem;
-      color: white;
+      background-color: #ff9800;
       border: none;
       border-radius: 6px;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
       text-decoration: none;
-      margin-top: 1.5rem;
-      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
+
+    .btn:hover {
+      background-color: #fb8c00;
+    }
+
     footer {
-      background-color: #333;
+      background: rgba(0, 0, 0, 0.8);
       color: white;
       text-align: center;
       padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h2 {
+        font-size: 2rem;
+      }
+
+      .hero-content {
+        padding: 30px 20px;
+      }
     }
   </style>
+
 </head>
 <body>
 
@@ -74,9 +130,11 @@
   </header>
 
   <section class="hero">
-    <h1>Craving Food on Campus?</h1>
-    <p>From crispy burgers to creamy pastas – we deliver your favorites fresh and fast!</p>
-    <a href="menu.html">Browse Menu</a>
+    <div class="hero-content">
+      <h2>Craving Delicious Food?</h2>
+      <p>Order your favorite meals from Campus Eats! Fast delivery, fresh flavors — right on your campus doorstep.</p>
+      <a href="menu.html" class="btn">Browse Menu</a>
+    </div>
   </section>
 
   <footer>

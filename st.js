@@ -5,7 +5,6 @@ function addToCart(item, price) {
   total += price;
   updateCart();
 }
-
 function updateCart()
 {
   const cartList = document.getElementById('cart');
@@ -16,5 +15,5 @@ function updateCart()
     li.textContent = ${product.item} - $${product.price.toFixed(2)};
     cartList.appendChild(li);
   });
-  totalElement.textContent = total.toFixed(2);
+    totalElement.textContent = total.toFixed(2);
 }

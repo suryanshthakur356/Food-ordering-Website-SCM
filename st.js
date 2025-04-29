@@ -10,7 +10,7 @@ function addToCart(item, price) {
 function updateCart() {
   const cartList = document.getElementById('cart');
   const totalElement = document.getElementById('total');
-  const totalElement = document.getElementById('total');
+  cartList.innerHTML = '';
   
   
   cart.forEach((product, index) => {

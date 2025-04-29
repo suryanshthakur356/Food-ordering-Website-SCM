@@ -159,7 +159,7 @@
   </footer>
 
   <script>
-    // Load data from localStorage
+    
     const orderList = JSON.parse(localStorage.getItem('campusOrderList')) || [];
     const orderTotal = localStorage.getItem('campusOrderTotal') || 0;
 
@@ -178,7 +178,6 @@
       });
       totalDisplay.textContent = orderTotal;
     }
-
     function placeOrder() {
       if (orderList.length === 0) {
         alert("Your order is empty!");
@@ -189,6 +188,5 @@
       window.location.href = "index.html";
     }
   </script>
-
 </body>
 </html>

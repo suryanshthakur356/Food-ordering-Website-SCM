@@ -1,4 +1,4 @@
-Team Members -> 1.Rachit Gupta........,.
+Team Members -> 1.Rachit Gupta........,..
                 2.Suryansh Thakur.
                 3.PRITHVI CHAUHAN.
                 4.Parul Narwal.

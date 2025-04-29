@@ -7,7 +7,8 @@ function addToCart(item, price) {
   updateCart();
 }
 
-function updateCart() {
+function updateCart() 
+{
   const cartList = document.getElementById('cart');
   const totalElement = document.getElementById('total');
   cartList.innerHTML = '';

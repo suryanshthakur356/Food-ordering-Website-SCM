@@ -5,6 +5,7 @@ function addToCart(item, price) {
   total += price;
   updateCart();
 }
+
 function updateCart()
 {
   const cartList = document.getElementById('cart');

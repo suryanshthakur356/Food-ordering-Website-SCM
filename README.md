@@ -5,4 +5,4 @@ Team Members -> 1.Rachit Gupta
                 5.Sahil Gupta
 Project Name -> FOOD ORDERING WEBSITE 
 Website Name -> Campus Eats
-Team Name ->  QuickBites
+Team Name -> QuickBites
